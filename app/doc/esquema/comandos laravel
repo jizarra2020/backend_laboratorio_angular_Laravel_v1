@@ -1,0 +1,37 @@
+-------------------------------------------
+PARA GENRAR UN NUEMO MODELO DE ENTIDAD
+---------------------------------------
+>php artisan make:model Role
+
+PARA GENERAR NUEVAS MIGRACIONE (TABLA)
+---------------------------------------------
+
+>php artisan make:migration create_roles_table
+
+---------------------------------------------
+Podemos generar el MODELO + MIGRACIONE
+---------------------------------------------
+>php artisan make:model Persona -m
+>php artisan make:model Sucursal -m
+>php artisan make:model Consulta -m
+>php artisan make:model Tipoexamen -m
+>php artisan make:model Enfermadad -m
+
+PARA TABLA RELACION O PIVOT
+
+>php artisan make:migration enfermedad_tipoexamen
+>php artisan make:migration consulta_tipoexamen
+>php artisan make:migration role_user
+
+---------------------------------------------
+PARA VER EL ESTADO DE MIGRACIONES
+----------------------------------------------
+>php artisan migrate:status
+
+PARA EJECUTAR Y MIGRAR LOS ARCHIVOS MIGRADOS
+
+>php artisan migarte
+
+revierte migración
+------
+>php artisan migrate:rollback
