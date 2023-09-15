@@ -1,0 +1,34 @@
+ 
+Configure your Git username/email
+
+1.	DESCARGAR GIT DE LA PAGINA e instalar para windows 64 bits
+https://git-scm.com
+
+2.	INSTALAR Y CONFIGURAR 
+
+	git config --global user.name "juvenal izarra"
+	git config --global user.email ibjuvenal@gmail.com
+
+ 
+
+SI YA EXISTE EL PROYECTO CLONAR
+	git clone dirección_de_repsositorio
+
+SI ES UN NUEVO PROYECTO
+	git init                   ojo al ejecutar en la carpeta pone den color
+
+crear una cuenta en GITHUB 
+crer un nuevo repositorio
+Relacionar el repositorio local de la pc con el repositorio remoto GitHub
+>git remote add origen https://github.com/jizarra2020/copy-laravel_angular
+>git remote -v
+---------------------------------------------------------------
+	git add .
+	git commit -m “Proyecto inicial mas migración”
+
+	git push origin master
+COMO REPOSITORIo TRABAJAR CON GITHUB
+
+
+-------------------
+git pull origen master       // actualiza los ultimos cambiso que alguiuen hizo

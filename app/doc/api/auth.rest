@@ -3,9 +3,9 @@ Accept: application/json
 Content-Type: application/json
 
 {
- "name": "admin",
- "email": "admin57@admin.com",
- "password": "admin54321"
+ "name": "jizarra",
+ "email": "jizarra69@hotmail.com",
+ "password": "jib54321"
 }
 
 ###login
@@ -14,17 +14,16 @@ Accept: : application/json
 Content-Type: application/json
 
 {
-    "email" : "admin57@admin.com",
-    "password" : "admin54321"
+    "email" : "jizarra69@hotmail.com",
+    "password" : "jib54321"
 }
 
 ### Perfil user
 GET http://127.0.0.1:8000/api/v1/auth/perfil
 Accept: application/json
-Authorization: Bearer 19|laravel_sanctum_Ebj8B7m3iU6TergGjwjaOgPaAro2nlRid6LL1XVU77c3751f
+Authorization: Bearer 23|laravel_sanctum_gDq2c90TnadUTRFcpNGEl38chJMsuNPMBxwceSVD002e5b73
 
 ### Salir
 POST http://127.0.0.1:8000/api/v1/auth/logout
 Accept: application/json
-Authorization: Bearer 19|laravel_sanctum_Ebj8B7m3iU6TergGjwjaOgPaAro2nlRid6LL1XVU77c3751f
-
+Authorization: Bearer 23|laravel_sanctum_gDq2c90TnadUTRFcpNGEl38chJMsuNPMBxwceSVD002e5b73

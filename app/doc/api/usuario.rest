@@ -1,0 +1,39 @@
+### busqueda
+GET http://127.0.0.1:8000/api/usuario?q=carlos
+Accept: application/json
+Authorization: Bearer 28|laravel_sanctum_11BxkIRy76naYnJGZAu1F4PYU5iEY2SRLwtknQi7ad465901
+
+### guardar    - strore
+POST  http://127.0.0.1:8000/api/usuario
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 29|laravel_sanctum_CuLIREddlbHmcbhHUjGgQWcL9hkDappwwUgIqDq7916542e8
+
+{
+    "name": "jizarra",
+    "email": "ibjuvenal@gmail.com",
+    "password": "12345678"
+}
+
+### Buscar por Id  
+GET http://127.0.0.1:8000/api/usuario/2
+Accept: application/json
+Authorization: Bearer 29|laravel_sanctum_CuLIREddlbHmcbhHUjGgQWcL9hkDappwwUgIqDq7916542e8
+
+### actulaizar    - UPDATE
+PUT  http://127.0.0.1:8000/api/usuario/12
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer 29|laravel_sanctum_CuLIREddlbHmcbhHUjGgQWcL9hkDappwwUgIqDq7916542e8
+
+{    
+    "name": "upd_jizarra",
+    "email": "ibjuvenal@gmail.com",
+    "password": "12345678"
+    
+}
+
+### eliminar usuario    -   destroy
+DELETE http://127.0.0.1:8000/api/usuario/12
+Accept: application/json
+Authorization: Bearer 29|laravel_sanctum_CuLIREddlbHmcbhHUjGgQWcL9hkDappwwUgIqDq7916542e8

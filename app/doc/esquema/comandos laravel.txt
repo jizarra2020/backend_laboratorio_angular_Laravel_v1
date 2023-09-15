@@ -35,3 +35,36 @@ PARA EJECUTAR Y MIGRAR LOS ARCHIVOS MIGRADOS
 revierte migración
 ------
 >php artisan migrate:rollback
+
+=================================================
+COMANDOS  CONTROLADORES
+=================================================
+> php artisan make:controller UserController --api
+
+
+________________________________
+CRUD DE USUARIOS
+________________________________
+
+
+-----------SEEDER Y FACTORIES---
+
+GWNERAR SEEDER
+
+>php artisanmake:seeder UserSeeder
+
+Ejecutarel seeder
+
+>php artisan migrate --seed
+
+GEENRAR FACTORY  datos FALSOS DE MANERA ALEATORIA
+
+
+------ CONFIGURACIONES  ------- DENTRO DE ARCHIVO app.php
+
+
+ZONA HORARIA (TIME ZONES)
+ 'timezone' => 'America/Lima',
+
+TRADUCCIONES A ESPAÑOL : 
+'locale' => 'es',
