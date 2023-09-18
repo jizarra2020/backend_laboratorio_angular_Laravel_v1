@@ -43,7 +43,8 @@ class AuthController extends Controller
 
    public function registrar(Request $request)
    {
-      //Validar  -  jizarra
+      //Validar  -  jizarra 19.09.2023
+
       $request->validate([
 
          "name" => "required",
@@ -51,9 +52,10 @@ class AuthController extends Controller
          "password" => "required"
 
       ]);
-      //Guardar  jizarra  o esta modifcad
+      //Guardar  jizarra  o esta modifcados 19.09.2023
 
       $usuario = new User;
+
       $usuario->name = $request->name;
       $usuario->email = $request->email;
       $usuario->password = bcrypt($request->password);
