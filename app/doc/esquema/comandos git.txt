@@ -31,4 +31,4 @@ COMO REPOSITORIo TRABAJAR CON GITHUB
 
 
 -------------------
-git pull origen master       // actualiza los ultimos cambiso que alguiuen hizo
+git pull origen master       // actualiza los ultimos cambiosde jizarra 
