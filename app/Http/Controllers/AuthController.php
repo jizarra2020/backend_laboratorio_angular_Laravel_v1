@@ -44,13 +44,14 @@ class AuthController extends Controller
    public function registrar(Request $request)
    {
       //Validar  -  jizarra
-      
       $request->validate([
+
          "name" => "required",
          "email" => "required|email|unique:users",
          "password" => "required"
+
       ]);
-      //Guardar
+      //Guardar  jizarra
       $usuario = new User;
       $usuario->name = $request->name;
       $usuario->email = $request->email;
@@ -58,7 +59,7 @@ class AuthController extends Controller
       $usuario->save();
       //Responder
       return response()->json([
-         "mensaje" => "Usuario Registrado",
+         "mensaje" => "Usuario Registrado. git",
          "status" => 1
       ], 201);
    }
