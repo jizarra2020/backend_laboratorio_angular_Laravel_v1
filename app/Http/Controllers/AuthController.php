@@ -25,7 +25,7 @@ class AuthController extends Controller
       }
 
       // authentica
-      return $request->user();
+      //return $request->user();
       $user = $request->user();
 
       // generar token
@@ -60,7 +60,7 @@ class AuthController extends Controller
       $usuario->save();
       //Responder
       return response()->json([
-
+         
          "mensaje" => "Usuario Registrado. git",
          "status" => 1
       ], 201);
