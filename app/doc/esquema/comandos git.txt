@@ -33,3 +33,23 @@ COMO REPOSITORIo TRABAJAR CON GITHUB
 -------------------
 git pull origen master       // actualiza los ultimos cambiosde jizarra 
 --------
+
+ or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+
+git remote set-url --delete jizarra2020 ttps://github.com/jizarra2020/copia_sis_laboratorio_laravel.git
+
+
+git remote set-url --add --push origin https://github.com/jizarra2020/backend_laboratorio_angular_v01.git
+git remote set-url --delete --push origin ttps://github.com/jizarra2020/copia_sis_laboratorio_laravel.git
