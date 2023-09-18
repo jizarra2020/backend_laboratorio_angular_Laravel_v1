@@ -16,19 +16,19 @@ class UsuarioController extends Controller
     }
     public function store(Request $request)
     {
-        //Validar  jizarra
+        //Validar  jizarra  18.09.2023
         $request->validate([
             "name" => "required",
             "email" => "required|unique:users",
             "password" => "required"
         ]);
-        //Registar  jizarra
+        //Registar  jizarra    18.09.2023
         $usuario = new User;
         $usuario->name = $request->name;
         $usuario->email = $request->email;
         $usuario->password = bcrypt($request->password);
         $usuario->save();
-        //Responder
+        //Responder     18.09.2023
         return response()->json([
             "mensaje" => "Usuario Registrado",
             "status" => 1,
@@ -41,7 +41,7 @@ class UsuarioController extends Controller
     }
      public function update(Request $request, $id)
     {
-         // validar
+         // validar    18.09.2023
          $request->validate([
             "name" => "required",
             "email" => "required|unique:users,email,$id"
