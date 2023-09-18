@@ -33,7 +33,7 @@ class AuthController extends Controller
       $token = $tokenResult->plainTextToken;
 
 
-      // responder
+      // responder  jii
       return response()->json([
          "accessToken" => $token,
          "token_type" => "bearer",

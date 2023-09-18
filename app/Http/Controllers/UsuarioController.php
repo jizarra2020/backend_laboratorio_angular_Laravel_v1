@@ -16,13 +16,13 @@ class UsuarioController extends Controller
     }
     public function store(Request $request)
     {
-        //Validar
+        //Validar  jizarra
         $request->validate([
             "name" => "required",
             "email" => "required|unique:users",
             "password" => "required"
         ]);
-        //Registar
+        //Registar  jizarra
         $usuario = new User;
         $usuario->name = $request->name;
         $usuario->email = $request->email;
