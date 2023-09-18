@@ -43,7 +43,8 @@ class AuthController extends Controller
 
    public function registrar(Request $request)
    {
-      //Validar
+      //Validar  -  jizarra
+      
       $request->validate([
          "name" => "required",
          "email" => "required|email|unique:users",
